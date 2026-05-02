@@ -161,9 +161,9 @@ CORS_ALLOWED_ORIGIN=https://project-hq-frontend-prod.railway.app
 
 ### 5.1 Test Backend
 ```
-GET https://<your-backend-url>/api/auth/login
+GET https://<your-backend-url>/actuator/health
 ```
-Should return `401 Unauthorized` (expected - auth required)
+Should return a JSON response with `"status":"UP"`
 
 ### 5.2 Test Frontend
 Open in browser:
